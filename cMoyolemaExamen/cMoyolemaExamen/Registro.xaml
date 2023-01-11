@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cMoyolemaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" TextColor="Black" FontAttributes="Bold"/>
+            <Grid>
+            <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            
+
+
+
+                <Label Text="Nombre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" TextColor="Blue"  Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Monto Inicial" TextColor="Black" FontAttributes="Bold"  Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtmontoinicial" TextColor="Blue" Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="Pago Mensual" TextColor="Black" FontAttributes="Bold" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblmensual" TextColor="Red" FontAttributes="Bold" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+            <Button Text="Calcular Pago mensual" x:Name="btnpagomensual" Clicked="btnpagomensual_Clicked"/>
+            
+            <Button Text="Guardar Informacion" x:Name="btnguardari" Clicked="btnguardari_Clicked"/>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

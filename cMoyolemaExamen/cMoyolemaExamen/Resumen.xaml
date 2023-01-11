@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cMoyolemaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblusuario" TextColor="Black"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblnombre" TextColor="Red" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" IsEnabled="True"/>
+
+                <Label Text="Total" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" />
+                <Label x:Name="lbltotal" TextColor="Red" FontAttributes="Bold" Grid.Row="1" Grid.Column="1" IsEnabled="True"/>
+                
+                
+            </Grid>
+            <Button x:Name="btnacerca" Text="ACERCA DE" Clicked="btnacerca_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
